@@ -1,6 +1,7 @@
 :root {
     --light-color: #FAFAF5;
     --grey-color: #5C5C5C;
+    --orange-color: #C96000;
 }
 
 body {
@@ -90,12 +91,14 @@ main {
 #main-img-container {
     width: 80%;
     max-width: 896px;
+    display: grid;
 }
 
 #main-people-img {
     width: 100%;
     max-width: 896px;
     height: auto;
+    grid-area: 1 / 1;
 }
 
 @media screen and (min-width: 850px) {
@@ -126,4 +129,52 @@ main {
     #main-people-img {
         border-radius: 4vh;
     }
+}
+
+#main-people-text-holder {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+
+    grid-area: 1 / 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+}
+
+#main-people-main-text {
+    color: white;
+    font-family: "Inter", serif;
+    font-size: 40px;
+    max-width: 390px;
+
+    margin-bottom: 80px;
+}
+
+#main-people-external-text {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+}
+
+#people-orange-text {
+    border-radius: 27px;
+    color: black;
+    background: var(--orange-color);
+    font-family: "Inter", serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    max-width: 260px;
+}
+
+#people-regular-text {
+    color: white;
+    max-width: 350px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 20px;
 }
