@@ -79,7 +79,7 @@ header {
 }
 
 .header-link:last-child {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 main {
@@ -102,8 +102,12 @@ main {
 }
 
 @media screen and (min-width: 850px) {
-    main {
-        padding-top: 120px;
+    #main-img-container {
+        margin-top: 120px;
+    }
+
+    #main-boxes-holder {
+        margin-top: 100px;
     }
 
     #main-people-img {
@@ -112,8 +116,12 @@ main {
 }
 
 @media screen and (max-width: 850px) and (min-width: 500px) {
-    main {
-        padding-top: 80px;
+    #main-img-container {
+        margin-top: 80px;
+    }
+
+    #main-boxes-holder {
+        margin-top: 60px;
     }
 
     #main-people-img {
@@ -122,8 +130,12 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-    main {
-        padding-top: 40px;
+    #main-img-container {
+        margin-top: 40px;
+    }
+
+    #main-boxes-holder {
+        margin-top: 30px;
     }
 
     #main-people-img {
@@ -174,6 +186,113 @@ main {
 #people-regular-text {
     color: white;
     max-width: 350px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#main-boxes-holder {
+    max-width: 896px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width: 1000px) {
+    #main-boxes-holder {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #main-boxes-holder {
+        flex-direction: column;
+    }
+
+    .main-content-box:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.main-content-box {
+    width: 251px;
+    height: 230px;
+
+    border: 1px solid black;
+    border-radius: 45px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#dark-box {
+    background: var(--grey-color);
+    color: white;
+}
+
+#light-box {
+    background: white;
+    color: black;
+}
+
+#orange-box {
+    background: var(--orange-color);
+    color: black;
+}
+
+.box-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-img {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+#magistr-img {
+    width: 27px;
+    height: 30px;
+}
+
+#students-img {
+    width: 39px;
+    height: 26px;
+}
+
+#medal-img {
+    width: 37px;
+    height: 37px;
+}
+
+.box-title {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 30px;
+
+    margin: 0;
+    padding-top: 15px;
+}
+
+#box-title-1 {
+    margin-left: 32px;
+}
+
+#box-title-2 {
+    margin-left: 15px;
+}
+
+#box-title-3 {
+    margin-left: 5px;
+}
+
+.box-text {
+    margin-left: 12px;
+    width: 230px;
     font-family: "Inter", serif;
     font-weight: 500;
     font-size: 20px;
