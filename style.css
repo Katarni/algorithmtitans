@@ -19,6 +19,26 @@ header {
     align-items: center;
 }
 
+#header-title-holder {
+    width: 30%;
+    min-width: 320px;
+    background: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-links-holder {
+    width: 70%;
+    background: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
 #header-title {
     font-family: "Newsreader", serif;
     font-weight: 400;
@@ -30,4 +50,33 @@ header {
 #logo-img {
     margin-left: 40px;
     margin-right: 20px;
+    height: 42px;
+}
+
+@media screen and (min-width: 900px) {
+    .header-link {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header-link {
+        visibility: hidden;
+    }
+}
+
+.header-link {
+    color: var(--light-color);
+    text-decoration: none;
+    font-family: "Inter", serif;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.header-link:not(:last-child) {
+    margin-right: 67px;
+}
+
+.header-link:last-child {
+    margin-right: 15px;
 }
